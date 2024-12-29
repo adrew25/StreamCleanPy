@@ -4,8 +4,9 @@
 
 ### Motivation
 
-Nvidia Broadcast offers a fantastic background removal feature, but it currently doesn't support Linux. To fill this gap, I tried using the OBS background removal plugin, but I faced compatibility issues, especially with my RTX 3080 and TensorRT, possibly due to the system architecture and environment the app was built for. This led to the creation of StreamClean as a Linux-compatible alternative.
+Nvidia Broadcast offers a fantastic background removal feature, but it currently doesn't support Linux (and maybe never will). To fill this gap, I tried using the OBS background removal plugin, but I faced compatibility issues, especially with my RTX 3080 and TensorRT, possibly due to the system architecture and environment the app was built for.
 
+This led to the creation of StreamClean, a Linux-compatible alternative designed for quick streaming with a removed background! StreamClean serves as a solution for the current time, filling the gap until Elefan develops a well-optimized C++ plugin for seamless and efficient background removal.
 Special thanks to [@lef-fan Eleftherios Fanioudakis](https://github.com/lef-fan) for the inspiration behind this project. Eleftherios is working on a similar project in C++, which is expected to deliver much better performance.
 
 ### Features
@@ -20,7 +21,7 @@ Special thanks to [@lef-fan Eleftherios Fanioudakis](https://github.com/lef-fan)
 Before you can use StreamClean, make sure you have the following installed:
 
 - **Linux** (Ubuntu/ParrotOS/Arch-based distros recommended).
-- **Python 3.7+**.
+- **Python 3.12+**.
 - **Nvidia GPU** with support for CUDA.
 - **v4l2loopback** kernel module (to create a virtual webcam).
 
@@ -61,15 +62,16 @@ Before you can use StreamClean, make sure you have the following installed:
 
 5. **Download the yolov9e-seg.pt**:
    i used yolov9 form ultralitics!
+
    ```bash
-      https://huggingface.co/merve/yolov9
+   https://huggingface.co/merve/yolov9
    ```
 
-5.1. **Run the main.py file**:
+6. **Run the main.py file**:
 
-```bash
-    python3 main.py
-```
+   ```bash
+   python3 main.py
+   ```
 
 ### Libraries Used
 
