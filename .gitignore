@@ -4,3 +4,4 @@ __pycache__/
 *.pyo
 
 /models/
+models/yolov9e-seg.ptmodels/yolov9e-seg.pt
