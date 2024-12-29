@@ -59,11 +59,17 @@ Before you can use StreamClean, make sure you have the following installed:
    sudo modprobe v4l2loopback
    ```
 
-5. **Run the main.py file**:
-
+5. **Download the yolov9e-seg.pt**:
+   i used yolov9 form ultralitics!
    ```bash
-       python3 main.py
+      https://huggingface.co/merve/yolov9
    ```
+
+5.1. **Run the main.py file**:
+
+```bash
+    python3 main.py
+```
 
 ### Libraries Used
 
