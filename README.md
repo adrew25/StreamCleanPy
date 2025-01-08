@@ -2,11 +2,15 @@
 
 **StreamClean** is a real-time background removal tool for streaming applications like OBS. Inspired by Nvidia Broadcast, this project provides a quick solution for Linux users to remove their background during live streaming.
 
+**OBScure** is a standalone, lightweight broadcasting application for Linux, designed for seamless integration with OBS Studio. Currently in development, Obscure aims to deliver real-time background removal, face tracking, and noise suppression using technologies like YOLOv9 for object detection, TensorRT for optimized AI inference on NVIDIA GPUs, and GStreamer for ultra-low-latency video streaming. The project is evolving, with ongoing tests to determine the best performance and compatibility. Future plans include the possibility of offering individual features as modular OBS plugins during installation, ensuring flexibility for different streaming setups.
+
+- obscure repo -> https://github.com/lef-fan/obscure
+
 ### Motivation
 
 Nvidia Broadcast offers a fantastic background removal feature, but it currently doesn't support Linux (and maybe never will). To fill this gap, I tried using the OBS background removal plugin, but I faced compatibility issues, especially with my RTX 3080 and TensorRT, possibly due to the system architecture and environment the app was built for.
 
-This led to the creation of StreamClean, a Linux-compatible alternative designed for quick streaming with a removed background! StreamClean serves as a solution for the current time, filling the gap until Elefan develops a well-optimized C++ plugin for seamless and efficient background removal.
+This led to the creation of StreamClean, a Linux-compatible alternative designed for quick streaming with a removed background! StreamClean serves as a solution for the current time, filling the gap until @lef-fan develops a well-optimized C++ plugin for seamless and efficient background removal (https://github.com/lef-fan/obscure).
 Special thanks to [@lef-fan Eleftherios Fanioudakis](https://github.com/lef-fan) for the inspiration behind this project. Eleftherios is working on a similar project in C++, which is expected to deliver much better performance.
 
 ### Features
